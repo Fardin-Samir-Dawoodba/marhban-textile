@@ -125,7 +125,7 @@ export const collections: Collection[] = [
       "Durable, color-fast fabrics built to survive every school year in style.",
     tag: "Institutional",
     image:
-      "https://images.unsplash.com/photo-1489987707025-afc232f720de?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=1200&auto=format&fit=crop",
     accent: "royal",
   },
 ];
