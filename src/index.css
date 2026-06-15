@@ -4,54 +4,54 @@
 
 @layer base {
   :root {
-    /* ---------- LIGHT THEME ---------- */
-    --background: 45 60% 98%;
-    --foreground: 222 60% 11%;
+    /* ---------- LIGHT THEME (clean white) ---------- */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 60% 11%;
+    --card-foreground: 222 47% 11%;
 
-    --primary: 217 73% 33%; /* royal blue */
-    --primary-foreground: 45 100% 97%;
+    --primary: 217 71% 33%; /* royal blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 43 89% 55%; /* gold */
-    --secondary-foreground: 222 60% 11%;
+    --secondary: 43 89% 52%; /* gold */
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 45 30% 94%;
-    --muted-foreground: 222 15% 42%;
+    --muted: 220 18% 96%;
+    --muted-foreground: 222 13% 40%;
 
-    --accent: 43 89% 55%;
-    --accent-foreground: 222 60% 11%;
+    --accent: 43 89% 52%;
+    --accent-foreground: 222 47% 11%;
 
-    --border: 222 20% 88%;
-    --input: 222 20% 88%;
-    --ring: 43 89% 55%;
+    --border: 220 16% 89%;
+    --input: 220 16% 89%;
+    --ring: 43 89% 50%;
 
     --radius: 0.9rem;
   }
 
   .dark {
-    /* ---------- DARK THEME ---------- */
-    --background: 222 55% 6%;
-    --foreground: 45 50% 96%;
+    /* ---------- DARK THEME (true black / OLED) ---------- */
+    --background: 0 0% 0%;
+    --foreground: 40 30% 96%;
 
-    --card: 222 45% 10%;
-    --card-foreground: 45 50% 96%;
+    --card: 0 0% 5%;
+    --card-foreground: 40 30% 96%;
 
     --primary: 43 89% 55%; /* gold leads in the dark */
-    --primary-foreground: 222 60% 8%;
+    --primary-foreground: 0 0% 4%;
 
-    --secondary: 217 73% 45%;
-    --secondary-foreground: 45 100% 97%;
+    --secondary: 217 71% 47%;
+    --secondary-foreground: 40 30% 96%;
 
-    --muted: 222 35% 14%;
-    --muted-foreground: 220 20% 65%;
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 64%;
 
     --accent: 43 89% 55%;
-    --accent-foreground: 222 60% 8%;
+    --accent-foreground: 0 0% 4%;
 
-    --border: 222 30% 18%;
-    --input: 222 30% 18%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
     --ring: 43 89% 55%;
   }
 }
@@ -95,7 +95,12 @@
 
 @layer utilities {
   .text-gradient-gold {
-    @apply bg-gradient-to-r from-gold-300 via-gold-500 to-gold-200 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 bg-clip-text text-transparent;
+  }
+
+  /* Brighter, more luminous gold in dark mode where contrast is plentiful. */
+  .dark .text-gradient-gold {
+    @apply from-gold-300 via-gold-500 to-gold-200;
   }
 
   .text-gradient-royal {
@@ -103,10 +108,17 @@
   }
 
   .glass {
-    background: hsl(var(--card) / 0.6);
+    background: hsl(var(--card) / 0.7);
     backdrop-filter: blur(14px) saturate(160%);
     -webkit-backdrop-filter: blur(14px) saturate(160%);
-    border: 1px solid hsl(var(--border) / 0.6);
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 10px 30px -16px rgb(0 0 0 / 0.25);
+  }
+
+  /* In true-black dark mode, swap the soft drop shadow for a faint inner sheen
+     so cards still separate from the background without a grey halo. */
+  .dark .glass {
+    box-shadow: inset 0 1px 0 0 hsl(0 0% 100% / 0.04);
   }
 
   .shimmer-text {
