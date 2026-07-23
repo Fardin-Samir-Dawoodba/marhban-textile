@@ -144,7 +144,7 @@ export const collections: Collection[] = [
       "Flowing chiffon and braisim for graceful, layered looks.",
     tag: "Flowy",
     image:
-      "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/20260625_220016.jpg?tr=w-1200",
+      "https://res.cloudinary.com/diql6lwwj/image/upload/v1784834841/20260625_220016_snk1yv.jpg",
     accent: "gold",
   },
   {
