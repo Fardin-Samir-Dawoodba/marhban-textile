@@ -17,7 +17,7 @@ export function About() {
           >
             <div className="overflow-hidden rounded-[2rem] border border-border">
               <img
-                src="https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?q=80&w=1200&auto=format&fit=crop"
+                src="https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/20260424_181255.jpg?tr=w-1000"
                 alt="Folded premium fabrics"
                 loading="lazy"
                 className="aspect-[4/5] w-full object-cover"
