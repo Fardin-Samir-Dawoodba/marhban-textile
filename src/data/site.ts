@@ -191,7 +191,7 @@ export const gallery = [
   "/images/gallery-3.jpg",
   "/images/gallery-4.jpg",
   "/images/gallery-5.jpg",
-  "/images/velvet.jpg",
+  "/images/20260618_223426.jpg",
 ];
 
 export const testimonials = [
