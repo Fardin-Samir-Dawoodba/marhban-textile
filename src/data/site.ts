@@ -108,7 +108,7 @@ export const collections: Collection[] = [
       "Light, breathable voile and everyday cotton for all-day comfort.",
     tag: "Everyday",
     image:
-      "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/IMG_20260618_222106_DRO.jpg?tr=w-1200",
+      "/images/voil-cotton.jpg",
     accent: "gold",
   },
   {
@@ -117,7 +117,7 @@ export const collections: Collection[] = [
       "Luminous silks with a soft, flowing drape for occasions that matter.",
     tag: "Occasion",
     image:
-      "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/Silk/IMG_20260618_224305_NR.jpg?tr=w-1200",
+      "/images/silk.jpg",
     accent: "royal",
   },
   {
@@ -126,7 +126,7 @@ export const collections: Collection[] = [
       "Premium fancy abaya fabrics with a rich finish and elegant flow.",
     tag: "Abaya",
     image:
-      "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/20260621_214436.jpg?tr=w-1200",
+      "/images/abaya.jpg",
     accent: "gold",
   },
   {
@@ -135,7 +135,7 @@ export const collections: Collection[] = [
       "Plush velvet — makhmal — with depth and warmth for winter and weddings.",
     tag: "Premium",
     image:
-      "https://res.cloudinary.com/diql6lwwj/image/upload/v1784746985/20260625_214054_jrrlcp.jpg",
+      "/images/velvet.jpg",
     accent: "royal",
   },
   {
@@ -144,7 +144,7 @@ export const collections: Collection[] = [
       "Flowing chiffon and braisim for graceful, layered looks.",
     tag: "Flowy",
     image:
-      "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/20260625_220016.jpg?tr=w-1200",
+      "/images/shiffon.jpg",
     accent: "gold",
   },
   {
@@ -153,7 +153,7 @@ export const collections: Collection[] = [
       "A wide range of hijabs and scarves in every shade and finish.",
     tag: "Accessories",
     image:
-      "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/IMG_20260621_222102_NR.jpg?tr=w-1200",
+      "/images/hijab.jpg",
     accent: "royal",
   },
 ];
@@ -186,12 +186,12 @@ export const craft = {
 };
 
 export const gallery = [
-  "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/20260424_181255.jpg?tr=w-1200",
-  "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/1781803970058.png?tr=w-1200",
-  "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/20260625_215007.jpg?tr=w-1200",
-  "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/Velvet/20260625_214054.jpg?tr=w-1200",
-  "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/20260625_215308.jpg?tr=w-1200",
-  "https://ik.imagekit.io/ga2fws3pt8/Marhaba%20Textiles%20Photos/Velvet/20260625_214054.jpg?tr=w-1200",
+  "/images/gallery-1.jpg",
+  "/images/gallery-2.jpg",
+  "/images/gallery-3.jpg",
+  "/images/gallery-4.jpg",
+  "/images/gallery-5.jpg",
+  "/images/velvet.jpg",
 ];
 
 export const testimonials = [
